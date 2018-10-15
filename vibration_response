@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-# mech. vibration book by rakheja pg# 542
 
-def function(x,t):
+
+def function(x,t):  
     x1 = x[0] 
     dx1 = x[1] 
     x2 = x[2]
