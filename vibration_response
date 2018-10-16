@@ -22,6 +22,8 @@ time = np.linspace(0,20,500)
 sol = odeint(function,[0.2,1.0,0,0],time)
 
 plt.plot(time,sol[:,0])
+plt.xlabel("Time")
+plt.ylabel("Distance")
 plt.grid()
 plt.show()
 
