@@ -19,9 +19,11 @@ def function(x,t):
     return (xdot)
 
 time = np.linspace(0,20,500)
-sol = odeint(function,[0.2,1.0,0,0],time)
+sol = odeint(function,[0.2,1.0,0,1.0],time)
 
-plt.plot(time,sol[:,0])
+plt.plot(time,sol[:,0],linestyle='-',label='x1')
+plt.plot(time,sol[:,2],linestyle=':',label='x2')
+plt.legend(loc='upper right',fancybox=True)
 plt.xlabel("Time")
 plt.ylabel("Distance")
 plt.grid()
